@@ -1,4 +1,4 @@
-# Conductor [![Travis Build](https://img.shields.io/bintray/v/oh-rin/Mars/conductor?color=f06292)](https://github.com/MarsPlanning/conductor)
+# Conductor [![Travis Build](https://img.shields.io/bintray/v/oh-rin/Mars/conductor?color=f06292)](https://bintray.com/oh-rin/Mars/conductor)
 
 对 [原 Conductor](https://github.com/bluelinelabs/Conductor) 做了部分修改以更贴合 Kotlin 和 Mars 相关项目的开发
 
@@ -10,6 +10,8 @@ for build.gradle.kts (recommended)
 repositories {
   // add Mars maven-repository
   maven(url = "https://dl.bintray.com/oh-rin/Mars")
+  // or use jcenter-repository
+  // jcenter()
   ....
 }
 
@@ -28,6 +30,8 @@ repositories {
   maven {
     url 'https://dl.bintray.com/oh-rin/Mars'
   }
+  // or use jcenter-repository
+  // jcenter()
   ....
 }
 

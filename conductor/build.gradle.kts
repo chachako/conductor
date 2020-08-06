@@ -13,7 +13,7 @@ plugins {
 android {
   setupWithConfig(this) {
     versionCode = 1
-    versionName = "1.0"
+    versionName = "1.1"
     consumerProguardFile("proguard-rules.txt")
   }
 }
