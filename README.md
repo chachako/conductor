@@ -1,6 +1,4 @@
-[![Travis Build](https://img.shields.io/bintray/v/oh-rin/Mars/conductor?color=f06292)](https://github.com/MarsPlanning/conductor)
-
-# Conductor
+# Conductor [![Travis Build](https://img.shields.io/bintray/v/oh-rin/Mars/conductor?color=f06292)](https://github.com/MarsPlanning/conductor)
 
 对 [原 Conductor](https://github.com/bluelinelabs/Conductor) 做了部分修改以更贴合 Kotlin 和 Mars 相关项目的开发
 
