@@ -22,7 +22,7 @@ dependencies {
 
 <details><summary>or build.gradle</summary>
 
-```groovy
+```gradle
 repositories {
   // add Mars maven-repository
   maven {
