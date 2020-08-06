@@ -41,6 +41,7 @@ dependencies {
 
 ## Changes
 * migrated gradle file to kts file
+* merge the (lifecycle-component)[https://github.com/bluelinelabs/Conductor/tree/develop/conductor-modules/arch-components-lifecycle]
 * `Controller.java` converted to `Controller.kt`
 * added some like `Activity` api to `Controller`
 * added a lifecycle `onInitialized()`, to support callbacks after the `constructor(...)` before `onCreateView()`
