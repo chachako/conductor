@@ -2,7 +2,7 @@
 
 # Conductor
 
-对 [原 Conductor](https://github.com/bluelinelabs/Conductor) 做了一些部分修改以更贴合 Kotlin 和 Mars 相关项目的开发
+对 [原 Conductor](https://github.com/bluelinelabs/Conductor) 做了部分修改以更贴合 Kotlin 和 Mars 相关项目的开发
 
 
 ## Installation
