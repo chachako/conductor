@@ -33,6 +33,7 @@ dependencies {
     AndroidX.lifecycle.liveDataKtx,
     AndroidX.lifecycle.liveDataCoreKtx
   )
+  compileOnlyOf(Libraries.tools.android)
   testImplementationOf(Testing.junit4, Testing.roboElectric)
 }
 
