@@ -13,7 +13,7 @@ plugins {
 android {
   setupWithConfig(this) {
     versionCode = 1
-    versionName = "1.1"
+    versionName = "1.2"
     consumerProguardFile("proguard-rules.txt")
   }
 }
@@ -43,24 +43,6 @@ ktlint {
   enableExperimentalRules.set(true)
 }
 
-bintray {
-  user = "oh-rin"
-  key = localProperties.getProperty("bintray.api.key")
-  pkg.apply {
-    repo = "Mars"
-    name = project.name
-    version.name = android.defaultConfig.versionName
-    websiteUrl = "https://github.com/oh-Rin"
-    issueTrackerUrl = "https://github.com/MarsPlanning/conductor/issues"
-    vcsUrl = "https://github.com/MarsPlanning/conductor.git"
-    desc = "一个更加契合 mars 项目或 kotlin 的 https://github.com/bluelinelabs/Conductor 分支"
-    withGroovyBuilder {
-      setProperty("licenses", arrayOf("Apache-2.0"))
-    }
-  }
-  setPublications("maven")
-}
-
 afterEvaluate {
   publishing {
     publications {
@@ -72,5 +54,21 @@ afterEvaluate {
         artifact(project.tasks.register("androidSourcesJar", AndroidSourcesJar::class.java).get())
       }
     }
+  }
+  bintray {
+    user = "oh-rin"
+    key = localProperties.getProperty("bintray.api.key")
+    publish = true
+    pkg.apply {
+      repo = "Mars"
+      name = project.name
+      version.name = android.defaultConfig.versionName
+      websiteUrl = "https://github.com/oh-Rin"
+      issueTrackerUrl = "https://github.com/MarsPlanning/conductor/issues"
+      vcsUrl = "https://github.com/MarsPlanning/conductor.git"
+      desc = "一个更加契合 mars 项目或 kotlin 的 https://github.com/bluelinelabs/Conductor 分支"
+      setLicenses("Apache-2.0")
+    }
+    setPublications("maven")
   }
 }
