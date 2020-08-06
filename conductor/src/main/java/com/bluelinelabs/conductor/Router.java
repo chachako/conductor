@@ -964,7 +964,7 @@ public abstract class Router {
     }
 
     void setControllerRouter(@NonNull Controller controller) {
-        controller.setRouter(this);
+        controller.setRouterOrNull(this);
         controller.onContextAvailable();
     }
 
