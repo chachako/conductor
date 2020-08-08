@@ -3,6 +3,9 @@
 package com.mars.conductor
 
 import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import androidx.lifecycle.*
 import androidx.savedstate.SavedStateRegistry
 import androidx.savedstate.SavedStateRegistryController
@@ -28,17 +31,15 @@ abstract class ComponentController : Controller(),
   ViewModelStoreOwner,
   SavedStateRegistryOwner {
 
+  private lateinit var lifecycleOwner: LifecycleOwner
   private val viewModelStore = ViewModelStore()
-  private val lifecycleOwner = ControllerLifecycleOwner(this)
   private val savedStateRegistryController = SavedStateRegistryController.create(this)
 
-  override fun onInitialized(controller: Controller) {
+  override fun onInitialized(controller: Controller, savedViewState: Bundle?) {
+    // State.INITIALIZED
+    lifecycleOwner = ControllerLifecycleOwner(this)
+    savedStateRegistryController.performRestore(savedViewState)
     initViewTreeOwners()
-  }
-
-  override fun onRestoreInstanceState(savedInstanceState: Bundle) {
-    super.onRestoreInstanceState(savedInstanceState)
-    savedStateRegistryController.performRestore(savedInstanceState)
   }
 
   override fun onSaveInstanceState(outState: Bundle) {

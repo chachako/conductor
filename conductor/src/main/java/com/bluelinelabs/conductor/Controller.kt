@@ -26,6 +26,7 @@ import com.bluelinelabs.conductor.internal.ClassUtils
 import com.bluelinelabs.conductor.internal.RouterRequiringFunc
 import com.bluelinelabs.conductor.internal.ViewAttachHandler
 import com.bluelinelabs.conductor.internal.ViewAttachHandler.ViewAttachListener
+import com.mars.conductor.ContextController
 import java.lang.ref.WeakReference
 import java.lang.reflect.Constructor
 import java.util.*
@@ -36,7 +37,7 @@ import java.util.*
  * a much lighter weight component than either Activities or Fragments. While it offers several lifecycle
  * methods, they are much simpler and more predictable than those of Activities and Fragments.
  */
-abstract class Controller protected constructor(args: Bundle? = null) {
+abstract class Controller protected constructor(args: Bundle? = null): ContextController() {
   /**
    * Returns any arguments that were set in this Controller's constructor
    */
@@ -147,7 +148,7 @@ abstract class Controller protected constructor(args: Bundle? = null) {
   private var isPerformingExitTransition = false
   private var isContextAvailable = false
 
-  protected abstract fun onInitialized(controller: Controller)
+  protected open fun onInitialized(controller: Controller, savedViewState: Bundle?) {}
 
   /**
    * Called when the controller is ready to display its view. A valid view must be returned. The standard body
@@ -245,7 +246,7 @@ abstract class Controller protected constructor(args: Bundle? = null) {
    */
   val activityOrNull: Activity?
     get() = if (routerOrNull != null) router.activity else null
-  val activity: Activity
+  override val activity: Activity
     get() = activityOrNull!!
 
 
@@ -260,8 +261,7 @@ abstract class Controller protected constructor(args: Bundle? = null) {
    */
   val resourcesOrNull: Resources?
     get() = activityOrNull?.resources
-  val resources: Resources
-    get() = resourcesOrNull!!
+  override fun getResources(): Resources = resourcesOrNull!!
 
   /**
    * Returns the Application Context derived from the host Activity or `null` if this Controller
@@ -269,8 +269,8 @@ abstract class Controller protected constructor(args: Bundle? = null) {
    */
   val applicationContextOrNull: Context?
     get() = activityOrNull?.applicationContext
-  val applicationContext: Context
-    get() = applicationContextOrNull!!
+
+  override fun getApplicationContext(): Context = applicationContextOrNull!!
 
   /**
    * Returns the Controller with the given instance id or `null` if no such Controller
@@ -444,7 +444,7 @@ abstract class Controller protected constructor(args: Bundle? = null) {
   /**
    * Calls startActivity(Intent) from this Controller's host Activity.
    */
-  fun startActivity(intent: Intent) {
+  override fun startActivity(intent: Intent) {
     executeWithRouter(object : RouterRequiringFunc {
       override fun execute() {
         router.startActivity(intent)
@@ -906,8 +906,6 @@ abstract class Controller protected constructor(args: Bundle? = null) {
       removeViewReference()
     }
     if (view == null) {
-      onInitialized(this)
-
       var listeners: List<LifecycleListener> = ArrayList(lifecycleListeners)
       for (lifecycleListener in listeners) {
         lifecycleListener.preCreateView(this)
@@ -915,6 +913,7 @@ abstract class Controller protected constructor(args: Bundle? = null) {
       val savedViewState = if (viewState == null) null else viewState!!.getBundle(
         KEY_VIEW_STATE_BUNDLE
       )
+      onInitialized(this, savedViewState)
       view = onCreateView(LayoutInflater.from(parent.context), parent, savedViewState)
       check(!(view === parent)) { "Controller's onCreateView method returned the parent ViewGroup. Perhaps you forgot to pass false for LayoutInflater.inflate's attachToRoot parameter?" }
       listeners = ArrayList(lifecycleListeners)
