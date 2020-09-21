@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cf34452f-fc16-44db-a33f-fc4f3b295a70" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conductor/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/conductor/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conductor/src/main/java/com/bluelinelabs/conductor/Controller.kt" beforeDir="false" afterPath="$PROJECT_DIR$/conductor/src/main/java/com/bluelinelabs/conductor/Controller.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conductor/src/main/kotlin/com/mars/conductor/ComponentController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/conductor/src/main/kotlin/com/mars/conductor/ComponentController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conductor/src/main/kotlin/com/mars/conductor/ContextController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/conductor/src/main/kotlin/com/mars/conductor/ContextController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/versions.properties" beforeDir="false" afterPath="$PROJECT_DIR$/versions.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[SerialNumber@b3004ceb]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/conductor">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="conductor" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="conductor" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1fi8NFvS9b8Z6RMKPVYkqcUxGPL" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="project.kotlinCompiler" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/conductor/src/main/kotlin/com/mars/conductor" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bluelinelabs.conductor" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/conductor" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.conductor:conductor [bintrayUpload]">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="conductor:conductor [androidSourcesJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/conductor" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="androidSourcesJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="conductor:conductor [bintrayUpload]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/conductor" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bintrayUpload" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="conductor:conductor [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/conductor" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="conductor:conductor [publish]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/conductor" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publish" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="conductor:conductor [sourcesJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/conductor" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="sourcesJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.conductor:conductor [bintrayUpload]" />
+        <item itemvalue="Gradle.conductor:conductor [sourcesJar]" />
+        <item itemvalue="Gradle.conductor:conductor [publish]" />
+        <item itemvalue="Gradle.conductor:conductor [androidSourcesJar]" />
+        <item itemvalue="Gradle.conductor:conductor [build]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cf34452f-fc16-44db-a33f-fc4f3b295a70" name="Default Changelist" comment="" />
+      <created>1596689510273</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596689510273</updated>
+    </task>
+    <task id="LOCAL-00001" summary="First change">
+      <created>1596715399266</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1596715399266</updated>
+    </task>
+    <task id="LOCAL-00002" summary="First change">
+      <created>1596715568461</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1596715568461</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Update README.md">
+      <created>1596715802697</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1596715802697</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Update README.md">
+      <created>1596715915894</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1596715915894</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Update README.md">
+      <created>1596715970080</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1596715970080</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Update README.md">
+      <created>1596716123249</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1596716123249</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Update README.md">
+      <created>1596716139476</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1596716139476</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Supported mars-library 'vlayer'">
+      <created>1596727471168</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1596727471168</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Publish v1.1 to https://bintray.com/oh-rin/Mars/conductor">
+      <created>1596728052613</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1596728052613</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Publish v1.2 to https://bintray.com/oh-rin/Mars/conductor">
+      <created>1596733316271</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1596733316271</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Updated v1.3, changed Controller.kt base to ContextController.kt">
+      <created>1596861001069</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1596861001069</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Fixed build error">
+      <created>1596861682931</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1596861682931</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="First change" />
+    <MESSAGE value="Update README.md" />
+    <MESSAGE value="Supported mars-library 'vlayer'" />
+    <MESSAGE value="Publish v1.1 to https://bintray.com/oh-rin/Mars/conductor" />
+    <MESSAGE value="Publish v1.2 to https://bintray.com/oh-rin/Mars/conductor" />
+    <MESSAGE value="Updated v1.3, changed Controller.kt base to ContextController.kt" />
+    <MESSAGE value="Fixed build error" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed build error" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="773" y="222" key="#com.intellij.ide.util.MemberChooser" timestamp="1596860140446">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="773" y="222" key="#com.intellij.ide.util.MemberChooser/0.23.1920.977@0.23.1920.977" timestamp="1596860140446" />
+    <state x="195" y="23" key="CommitChangelistDialog2" timestamp="1596861682780">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="195" y="23" key="CommitChangelistDialog2/0.23.1920.977@0.23.1920.977" timestamp="1596861682780" />
+    <state x="195" y="23" key="CommitChangelistDialog2/0.23.1920.979@0.23.1920.979" timestamp="1596733315445" />
+    <state x="0" y="110" key="DiffContextDialog" timestamp="1596727452090">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state x="0" y="110" key="DiffContextDialog/0.23.1920.979@0.23.1920.979" timestamp="1596727452090" />
+    <state width="1876" height="256" key="GridCell.Tab.0.bottom" timestamp="1600691411387">
+      <screen x="0" y="25" width="1920" height="970" />
+    </state>
+    <state width="1878" height="259" key="GridCell.Tab.0.bottom/0.23.1920.977@0.23.1920.977" timestamp="1596861711280" />
+    <state width="1876" height="259" key="GridCell.Tab.0.bottom/0.23.1920.979@0.23.1920.979" timestamp="1596788810573" />
+    <state width="1876" height="256" key="GridCell.Tab.0.bottom/0.25.1920.970@0.25.1920.970" timestamp="1600691411387" />
+    <state width="1876" height="256" key="GridCell.Tab.0.center" timestamp="1600691411386">
+      <screen x="0" y="25" width="1920" height="970" />
+    </state>
+    <state width="1878" height="259" key="GridCell.Tab.0.center/0.23.1920.977@0.23.1920.977" timestamp="1596861711280" />
+    <state width="1876" height="259" key="GridCell.Tab.0.center/0.23.1920.979@0.23.1920.979" timestamp="1596788810572" />
+    <state width="1876" height="256" key="GridCell.Tab.0.center/0.25.1920.970@0.25.1920.970" timestamp="1600691411386" />
+    <state width="1876" height="256" key="GridCell.Tab.0.left" timestamp="1600691411386">
+      <screen x="0" y="25" width="1920" height="970" />
+    </state>
+    <state width="1878" height="259" key="GridCell.Tab.0.left/0.23.1920.977@0.23.1920.977" timestamp="1596861711280" />
+    <state width="1876" height="259" key="GridCell.Tab.0.left/0.23.1920.979@0.23.1920.979" timestamp="1596788810572" />
+    <state width="1876" height="256" key="GridCell.Tab.0.left/0.25.1920.970@0.25.1920.970" timestamp="1600691411386" />
+    <state width="1876" height="256" key="GridCell.Tab.0.right" timestamp="1600691411387">
+      <screen x="0" y="25" width="1920" height="970" />
+    </state>
+    <state width="1878" height="259" key="GridCell.Tab.0.right/0.23.1920.977@0.23.1920.977" timestamp="1596861711280" />
+    <state width="1876" height="259" key="GridCell.Tab.0.right/0.23.1920.979@0.23.1920.979" timestamp="1596788810573" />
+    <state width="1876" height="256" key="GridCell.Tab.0.right/0.25.1920.970@0.25.1920.970" timestamp="1600691411387" />
+    <state x="461" y="151" key="SettingsEditor" timestamp="1600686738923">
+      <screen x="0" y="25" width="1920" height="970" />
+    </state>
+    <state x="461" y="150" key="SettingsEditor/0.23.1920.977@0.23.1920.977" timestamp="1596696808949" />
+    <state x="461" y="150" key="SettingsEditor/0.23.1920.979@0.23.1920.979" timestamp="1596715141715" />
+    <state x="461" y="151" key="SettingsEditor/0.25.1920.970@0.25.1920.970" timestamp="1600686738923" />
+    <state x="560" y="233" key="Vcs.Push.Dialog.v2" timestamp="1596861684618">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="560" y="233" key="Vcs.Push.Dialog.v2/0.23.1920.977@0.23.1920.977" timestamp="1596861684618" />
+    <state x="560" y="233" key="Vcs.Push.Dialog.v2/0.23.1920.979@0.23.1920.979" timestamp="1596733319716" />
+    <state x="737" y="296" key="chooseDestDirectoryDialog" timestamp="1596694907485">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="737" y="296" key="chooseDestDirectoryDialog/0.23.1920.977@0.23.1920.977" timestamp="1596694907485" />
+    <state width="372" height="292" key="documentation.popup.size" timestamp="1596787399767">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state width="372" height="291" key="documentation.popup.size/0.23.1920.977@0.23.1920.977" timestamp="1596701998919" />
+    <state width="372" height="292" key="documentation.popup.size/0.23.1920.979@0.23.1920.979" timestamp="1596787399767" />
+    <state x="653" y="221" width="964" height="580" key="find.popup" timestamp="1596715335526">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state x="653" y="221" width="964" height="580" key="find.popup/0.23.1920.979@0.23.1920.979" timestamp="1596715335526" />
+  </component>
+</project>

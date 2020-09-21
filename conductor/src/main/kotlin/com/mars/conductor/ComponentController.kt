@@ -3,9 +3,6 @@
 package com.mars.conductor
 
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import androidx.lifecycle.*
 import androidx.savedstate.SavedStateRegistry
 import androidx.savedstate.SavedStateRegistryController
@@ -14,11 +11,7 @@ import androidx.savedstate.ViewTreeSavedStateRegistryOwner
 import com.bluelinelabs.conductor.Controller
 import com.bluelinelabs.conductor.ControllerLifecycleOwner
 import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.CoroutineStart
-import kotlinx.coroutines.async
-import kotlinx.coroutines.launch
 import kotlin.coroutines.CoroutineContext
-import kotlin.coroutines.EmptyCoroutineContext
 
 /*
  * author: 凛
@@ -29,11 +22,15 @@ import kotlin.coroutines.EmptyCoroutineContext
 abstract class ComponentController : Controller(),
   LifecycleOwner,
   ViewModelStoreOwner,
-  SavedStateRegistryOwner {
+  SavedStateRegistryOwner,
+  CoroutineScope {
 
   private lateinit var lifecycleOwner: LifecycleOwner
-  private val viewModelStore = ViewModelStore()
   private val savedStateRegistryController = SavedStateRegistryController.create(this)
+  private val viewModelStore = ViewModelStore()
+
+  override val coroutineContext: CoroutineContext
+    get() = lifecycleScope.coroutineContext
 
   override fun onInitialized(controller: Controller, savedViewState: Bundle?) {
     // State.INITIALIZED
@@ -66,34 +63,6 @@ abstract class ComponentController : Controller(),
 
   // ViewModel
 
-  fun <T> LiveData<T>.observe(observer: (T) -> Unit) =
-    observe(this@ComponentController) { observer.invoke(it) }
-
-  // Coroutines
-
-  /** @see CoroutineScope.launch */
-  fun launch(
-    context: CoroutineContext = EmptyCoroutineContext,
-    start: CoroutineStart = CoroutineStart.DEFAULT,
-    block: suspend CoroutineScope.() -> Unit
-  ) = lifecycleScope.launch(context, start, block)
-
-  /** @see CoroutineScope.async */
-  fun <T> async(
-    context: CoroutineContext = EmptyCoroutineContext,
-    start: CoroutineStart = CoroutineStart.DEFAULT,
-    block: suspend CoroutineScope.() -> T
-  ) = lifecycleScope.async(context, start, block)
-
-  /** @see LifecycleCoroutineScope.launchWhenCreated */
-  fun launchWhenCreated(block: suspend CoroutineScope.() -> Unit) =
-    lifecycleScope.launchWhenCreated(block)
-
-  /** @see LifecycleCoroutineScope.launchWhenStarted */
-  fun launchWhenStarted(block: suspend CoroutineScope.() -> Unit) =
-    lifecycleScope.launchWhenStarted(block)
-
-  /** @see LifecycleCoroutineScope.launchWhenResumed */
-  fun launchWhenResumed(block: suspend CoroutineScope.() -> Unit) =
-    lifecycleScope.launchWhenResumed(block)
+  fun <T> LiveData<T>.observe(onChanged: (T) -> Unit): Observer<T> =
+    observe(owner = this@ComponentController, onChanged = onChanged)
 }

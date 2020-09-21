@@ -583,7 +583,7 @@ abstract class Controller protected constructor(args: Bundle? = null): ContextCo
     for (childRouter in childRouters) {
       childTransactions.addAll(childRouter.getBackstack())
     }
-    childTransactions.sortWith { o1: RouterTransaction, o2: RouterTransaction -> o2.transactionIndex - o1.transactionIndex }
+    childTransactions.sortWith(Comparator { o1, o2 ->  o2.transactionIndex - o1.transactionIndex })
     for (transaction in childTransactions) {
       val childController = transaction.controller
       if (childController.isAttached && childController.router.handleBack()) {
@@ -884,7 +884,7 @@ abstract class Controller protected constructor(args: Bundle? = null): ContextCo
       viewAttachHandler = null
       viewIsAttached = false
       if (isBeingDestroyed) {
-        destroyedView = WeakReference(view)
+        destroyedView = WeakReference(view!!)
       }
       view = null
       listeners = ArrayList(lifecycleListeners)

@@ -1,33 +1,9 @@
-@file:Suppress("SpellCheckingInspection", "UnstableApiUsage")
-
-import extensions.*
-
-buildscript {
-    repositories {
-        // 本地 Gradle 插件
-        maven("${System.getenv("MARS_PROJECT_ROOT")}/internal/.release/")
-        // 网络 Maven 仓库
-        jcenter()
-        google()
-        mavenCentral()
-    }
-    dependencies.classpath("com.mars.gradle.plugin:global:1.0")
-}
-
-plugins {
-    id("com.jfrog.bintray") version "1.8.5"
-    id("org.jlleitschuh.gradle.ktlint") version "9.1.1"
-}
+/**
+ * 加载 Kotlin 代码以解决 Toolkit 插件的 Class '**' is compiled by a new Kotlin compiler backend and cannot be loaded by the old compiler
+ * FIXME 等什么时候 Gradle 内置了 1.4 版本的 Kotlin 后才能够删除这些代码（该死的 Gradle）
+ */
+plugins { `kotlin-dsl` }; fixOldCompilerWarn()
 
 allprojects {
-    setupRepositories()
-    configInject()
-}
-
-subprojects {
-    configInject()
-}
-
-task<Delete>("clean") {
-    delete(rootProject.buildDir)
+  setupRepositories(withMarsRepo = true)
 }
